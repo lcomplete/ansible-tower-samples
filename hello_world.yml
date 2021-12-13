@@ -2,6 +2,5 @@
   hosts: all
   tasks:
     - name: Hello Message
-      debug:
-        msg: "Hello World!"
+      shell: echo "Hello World" `date` by `hostname` > /tmp/hello.log
 
